@@ -1,0 +1,132 @@
+/* Styles globaux */
+:root {
+    --primary-color: #2563eb;
+    --danger-color: #dc2626;
+    --success-color: #006600;
+    --error-color: #cc0000;
+    --background-color: #f5f5f5;
+    --card-background: white;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+/* Conteneur principal */
+.reservation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--card-background);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+/* Informations sur l'hôtel */
+.hotel-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hotel-info h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hotel-info p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.stars {
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+/* Informations sur le client */
+.client-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client-info h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Informations sur la chambre ou les chambres */
+.chambre-info {
+    margin-bottom: 20px;
+}
+
+.chambre-info h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.chambre-info p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Boutons de confirmation */
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.confirmation-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-buttons button.ok {
+    background: var(--primary-color);
+    color: white;
+}
+
+.confirmation-buttons button.ok:hover {
+    background: #1d4ed8;
+}
+
+.confirmation-buttons button.no {
+    background: var(--danger-color);
+    color: white;
+}
+
+.confirmation-buttons button.no:hover {
+    background: #b91c1c;
+}
+
+/* Styles pour les listes de chambres */
+.chambre-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.chambre-item {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.chambre-item p {
+    margin: 5px 0;
+    color: #666;
+}

@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #3B82F6;
+    --text-color: #333;
+    --text-secondary: #6B7280;
+    --card-color: #FFFFFF;
+    --radius: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.search-results-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hotel-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+.hotel-image {
+    position: relative;
+    height: 200px;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.8);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.hotel-details {
+    padding: 1rem;
+}
+
+.hotel-details h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.hotel-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #E5E7EB;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hotel-results-grid {
+        grid-template-columns: 1fr;
+    }
+}
