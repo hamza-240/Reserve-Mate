@@ -1,3 +1,7 @@
+/**
+ * Copyright (c) 2023 Votre Nom
+ * MIT License
+ */
 package com.pfe.controller;
 
 import com.pfe.dao.GetFacture;
@@ -11,6 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

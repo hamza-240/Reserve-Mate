@@ -1,3 +1,7 @@
+/**
+ * Copyright (c) 2023 Votre Nom
+ * MIT License
+ */
 package com.pfe.model;
 
 public class Chambre  {

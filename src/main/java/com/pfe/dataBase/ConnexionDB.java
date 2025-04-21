@@ -1,3 +1,7 @@
+/**
+ * Copyright (c) 2023 Votre Nom
+ * MIT License
+ */
 package com.pfe.dataBase;
 
 import io.github.cdimascio.dotenv.Dotenv;
